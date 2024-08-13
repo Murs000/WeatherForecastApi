@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WsxVo8og7cw=",
+  "success": true,
+  "projectFilePath": "/Users/mursal/Projects/WeatherForecastApi/Domain/Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/mursal/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.7/microsoft.entityframeworkcore.abstractions.8.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

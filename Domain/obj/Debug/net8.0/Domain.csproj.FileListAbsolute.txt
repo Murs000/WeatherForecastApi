@@ -1,0 +1,12 @@
+/Users/mursal/Projects/WeatherForecastApi/Domain/bin/Debug/net8.0/Domain.deps.json
+/Users/mursal/Projects/WeatherForecastApi/Domain/bin/Debug/net8.0/Domain.dll
+/Users/mursal/Projects/WeatherForecastApi/Domain/bin/Debug/net8.0/Domain.pdb
+/Users/mursal/Projects/WeatherForecastApi/Domain/obj/Debug/net8.0/Domain.csproj.AssemblyReference.cache
+/Users/mursal/Projects/WeatherForecastApi/Domain/obj/Debug/net8.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mursal/Projects/WeatherForecastApi/Domain/obj/Debug/net8.0/Domain.AssemblyInfoInputs.cache
+/Users/mursal/Projects/WeatherForecastApi/Domain/obj/Debug/net8.0/Domain.AssemblyInfo.cs
+/Users/mursal/Projects/WeatherForecastApi/Domain/obj/Debug/net8.0/Domain.csproj.CoreCompileInputs.cache
+/Users/mursal/Projects/WeatherForecastApi/Domain/obj/Debug/net8.0/Domain.dll
+/Users/mursal/Projects/WeatherForecastApi/Domain/obj/Debug/net8.0/refint/Domain.dll
+/Users/mursal/Projects/WeatherForecastApi/Domain/obj/Debug/net8.0/Domain.pdb
+/Users/mursal/Projects/WeatherForecastApi/Domain/obj/Debug/net8.0/ref/Domain.dll
