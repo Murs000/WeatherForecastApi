@@ -1,7 +1,8 @@
+using Application.Services.Interfaces;
 using AutoMapper;
 using Domain.Interfaces.Repositories;
 
-namespace Application.Services.Interfaces
+namespace Application.Services.Implementations
 {
     public class ServiceUnitOfWork(IRepositoryUnitOfWork repository, IMapper mapper) :IServiceUnitOfWork
     {

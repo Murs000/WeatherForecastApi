@@ -1,8 +1,9 @@
 using Application.DTOs;
+using Application.Services.Interfaces;
 using AutoMapper;
 using Domain.Interfaces.Repositories;
 
-namespace Application.Services.Interfaces
+namespace Application.Services.Implementations
 {
     public class ReportService(IRepositoryUnitOfWork repository, IMapper mapper) : IReportService
     {

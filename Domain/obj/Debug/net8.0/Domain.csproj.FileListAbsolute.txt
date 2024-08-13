@@ -10,3 +10,4 @@
 /Users/mursal/Projects/WeatherForecastApi/Domain/obj/Debug/net8.0/refint/Domain.dll
 /Users/mursal/Projects/WeatherForecastApi/Domain/obj/Debug/net8.0/Domain.pdb
 /Users/mursal/Projects/WeatherForecastApi/Domain/obj/Debug/net8.0/ref/Domain.dll
+/Users/mursal/Projects/WeatherForecastApi/Domain/obj/Debug/net8.0/Domain.sourcelink.json

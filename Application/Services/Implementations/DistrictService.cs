@@ -1,9 +1,10 @@
 using Application.DTOs;
+using Application.Services.Interfaces;
 using AutoMapper;
 using Domain.Entities;
 using Domain.Interfaces.Repositories;
 
-namespace Application.Services.Interfaces
+namespace Application.Services.Implementations
 {
     public class DistrictService(IRepositoryUnitOfWork repository, IMapper mapper) : IDistrictService
     {

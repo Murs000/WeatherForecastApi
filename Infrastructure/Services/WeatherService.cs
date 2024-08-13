@@ -5,12 +5,20 @@ using Newtonsoft.Json;
 
 namespace Infrastructure.Services
 {
-    public class WeatherService (HttpClient client,IConfiguration configuration) : IWeatherService
+    public class WeatherService : IWeatherService
     {
+        private readonly HttpClient client;
+        private readonly IConfiguration configuration;
+
+        public WeatherService(IHttpClientFactory _httpClientFactory, IConfiguration _configuration)
+        {
+            client = _httpClientFactory.CreateClient("WeatherClient");
+            configuration = _configuration;
+        }
         public async Task<Report> GetWeatherAsync(double latitude, double longitude)
         {
-            var apiKey = configuration["OpenWeatherMap:ApiKey"];
-            var unit = configuration["OpenWeatherMap:Units"];
+            var apiKey = configuration["WeatherApi:ApiKey"];
+            var unit = configuration["WeatherApi:Units"];
 
             var requestUri = $"weather?lat={latitude}&lon={longitude}&appid={apiKey}&units={unit}";
             var response = await client.GetAsync(requestUri);

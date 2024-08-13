@@ -13,3 +13,4 @@
 /Users/mursal/Projects/WeatherForecastApi/Infrastructure/obj/Debug/net8.0/refint/Infrastructure.dll
 /Users/mursal/Projects/WeatherForecastApi/Infrastructure/obj/Debug/net8.0/Infrastructure.pdb
 /Users/mursal/Projects/WeatherForecastApi/Infrastructure/obj/Debug/net8.0/ref/Infrastructure.dll
+/Users/mursal/Projects/WeatherForecastApi/Infrastructure/obj/Debug/net8.0/Infrastructure.sourcelink.json

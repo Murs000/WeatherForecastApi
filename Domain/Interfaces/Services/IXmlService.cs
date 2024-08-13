@@ -4,6 +4,6 @@ namespace Domain.Interfaces.Services
 {
     public interface IXmlService
     {
-        public Task<List<District>> GetDistricts(byte[] xmlFile);
+        public Task<List<District>> GetDistrictsAsync(byte[] xmlFile);
     }
 }

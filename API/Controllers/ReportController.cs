@@ -11,17 +11,30 @@ namespace API.Controllers;
 public class ReportController(IWeatherService service,IServiceUnitOfWork serviceUnitOfWork,IMapper mapper) : ControllerBase
 {
     [HttpGet]
-    public ActionResult<List<ReportDTO>> GetReports([FromQuery] ReportFilter filter, [FromQuery] Pagination pagination)
-    {
-        return Ok(serviceUnitOfWork.ReportService.Filter(filter,pagination));
-    }
-    [HttpPost]
-    public IActionResult WeatherCheck([FromBody] DistrictDTO model)
-    {
-        var weather = service.GetWeatherAsync(model.Lat, model.Lon);
+        public async Task<ActionResult<List<ReportDTO>>> GetReports([FromQuery] ReportFilter filter, [FromQuery] Pagination pagination)
+        {
+            var reports = await serviceUnitOfWork.ReportService.Filter(filter, pagination);
+            return Ok(reports);
+        }
 
-        serviceUnitOfWork.ReportService.Insert(mapper.Map<ReportDTO>(weather),model.Id);
+        [HttpPost]
+        public async Task<IActionResult> WeatherCheck([FromBody] DistrictDTO model)
+        {
+            if (model == null)
+            {
+                return BadRequest("District data is null.");
+            }
 
-        return Ok(weather);
-    }
+            var weather = await service.GetWeatherAsync(model.Lat, model.Lon);
+
+            if (weather == null)
+            {
+                return NotFound("Weather data not found.");
+            }
+
+            var reportDTO = mapper.Map<ReportDTO>(weather);
+            await serviceUnitOfWork.ReportService.Insert(reportDTO, model.Id);
+
+            return Ok(weather);
+        }
 }

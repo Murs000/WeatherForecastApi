@@ -83,3 +83,4 @@
 /Users/mursal/Projects/WeatherForecastApi/API/obj/Debug/net8.0/API.pdb
 /Users/mursal/Projects/WeatherForecastApi/API/obj/Debug/net8.0/API.genruntimeconfig.cache
 /Users/mursal/Projects/WeatherForecastApi/API/obj/Debug/net8.0/ref/API.dll
+/Users/mursal/Projects/WeatherForecastApi/API/obj/Debug/net8.0/API.sourcelink.json
